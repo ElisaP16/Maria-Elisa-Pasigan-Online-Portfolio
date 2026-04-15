@@ -1,0 +1,57 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.header{
+    background-color: #7fffd4;
+    padding: 15dvh;
+}
+
+#name{
+    background-color: bisque;
+    margin-top: 3%;
+    font-size: 5dvh;
+    margin-bottom: 8%;
+    text-align: center;
+}
+
+.btns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    padding: 3%;
+    background-color: blueviolet;
+}
+
+#about, #projects, #contact{
+    padding: 2%;
+    font-size: 3dvh;
+}
+
+#lower_rectangle{
+    background-color: blueviolet;
+}
+
+#bio{
+    background-color: bisque;
+    /* Rectangle 7 */
+
+position: absolute;
+width: 687px;
+height: 217px;
+left: 42px;
+top: 625px;
+}
+
+#picture-frame{
+    background-color: rgb(159, 78, 78);
+    /* Rectangle 6 */
+    position: rela;
+    width: 214px;
+    height: 209px;
+    left: 33px;
+    top: 600px;
+}
