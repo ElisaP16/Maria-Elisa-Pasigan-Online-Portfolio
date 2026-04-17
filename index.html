@@ -3,53 +3,83 @@
     <head>
         <link rel="stylesheet" type="text/css" href="index_styles.css"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     </head>
 
     <body>
         <div class="header">
-            <p id="name">Elisa Pasigan Online Portfolio</p>
+            <p id="name" class="label_font">Elisa Pasigan Online Portfolio</p>
 
             <div class="btns">
-                <button id="about" type="button"><span>About Me</span></button>
-                <button id="projects" type="button"><span>My Projects</span></button>
-                <button id="contact" type="button"><span>Contact Me</span></button>
+                <a href="#about_section">
+                    <button id="about" class="label_font" type="button">
+                        <span>About Me</span>
+                    </button>
+                </a>
+
+                <a href="#projects_section">
+                    <button id="projects" class="label_font" type="button"><span>My Projects</span></button>
+                </a>
+                
+                <a href="#contact_section">
+                    <button id="contact" class="label_font" type="button"><span>Contact Me</span></button>
+                </a>
             </div>
         </div> 
         <!-- END OF HEADER -->
 
-        <div class="about_class">
-            <p class="label"> About Me </p>
+        <section id="about_section">
+            <p class="label label_font"> About Me </p>
             <img id="picture-frame" src="profile.jfif">
-            <p id="lower_rectangle">She/Her, 19</p>
-            <p id="bio">Hello! I'm Elisa Pasigan, welcome to my portfolio. 
+            <p class="content_font" id="lower_rectangle">She/Her 19</p>
+            <p class="content_font" id="bio">Hello! I'm Elisa Pasigan, welcome to my portfolio. 
                 I'm a Computer Science student at De La Salle University Manila. 
                 This is a showcase of my favorite projects as well as a place I work on my HTML, CSS, and JS</p>
-        </div>
+        </section>
         <!-- END OF ABOUT -->
 
-        <div class="projects_class">
-            <p class="label">My Projects</p>
-            <div class="project_container">1</div>
-            <div class="project_container">2</div>
-            <div class="project_container">3</div>
-        </div>
-
+        <section id="projects_section">
+            <p class="label label_font">Projects</p>
+            <p class="content_font" id="projects_subtitle">A few projects I have worked on</p>
+            
+            <div id="achievement_unlocked" class="project_container">
+                <p class="project_title content_font">Achievement Unlocked Website</p>
+                <p class="project_content content_font">A mock up website for a online game rental business</p>
+                <a class="content_font" href="https://github.com/ElisaP16/-CCAPDEV-MCO-Achievement-Unlocked.git">Repository</a>
+            </div>
+            
+            <div id="sokoban" class="project_container">
+                <p class="project_title content_font">Sokobot</p>
+                <p class="project_content content_font">An intelligent solver for solving levels of the game Sokoban using an A* heuristic search algorithm</p>
+                <a href="https://github.com/HexadecsTrtl/CSINTSY-MCO-Grp20/tree/main/MCO1%20-%20SokoBot">Repository</a>
+            </div>
+                
+            <div id="TP_database" class="project_container">
+                <p class="project_title content_font">Theme Park Database</p>
+                <p class="project_content content_font">A simple database application meant to manage a theme park</p>
+                <a href="https://github.com/loveeandi/Theme_Park_Database.git">Repository</a>
+            </div>
+        </section>
+        <!-- END OF PROJECTS -->
     
-        <div class="contact_class">
-            <p class="label"> Contact Me </p>
+        <section id="contact_section">
+            <p class="label label_font"> Contact Me </p>
 
-            <div class="boxes"> 
+            <!-- <div class="boxes"> 
                 <div id="box1">1</div>
                 <div id="box2">2</div>
                 <div id="box3">3</div>
-            </div>
+            </div> -->
 
             <div class="content">
-                <p>Email: elisa_pasigan@dlsu.edu.ph</p>
-                <p>FB: @Elisa Pasigan</p>
-                <p>Linkedin: @Elisa Pasigan</p>    
+                <p class="content_font">Email: elisa_pasigan@dlsu.edu.ph</p>
+                <p class="content_font">FB: @Elisa Pasigan</p>
+                <p class="content_font">Linkedin: @Elisa Pasigan</p>    
             </div>
-        </div>
+        </section>
         <!-- END OF CONTACT -->
 
     </body>
