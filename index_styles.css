@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: rgb(249, 243, 235);
+}
+
 .label_font {
   font-family: "IBM Plex Sans", sans-serif;
   font-optical-sizing: auto;
@@ -19,7 +23,7 @@
 }
 
 .header{
-    background-color: #7fffd4;
+    background-color: #5bd5eb;
     /* padding-top: 15%;
     display: flex;
     flex-direction: column;
@@ -32,7 +36,7 @@
 #name{
     /* background-color: bisque; */
     padding-top: 35dvh;
-    font-size: 5dvh;
+    font-size: 7dvh;
     margin-bottom: 10dvh;
     text-align: center;
 }
@@ -51,6 +55,7 @@
     height: 10vh;
     padding: 2%;
     font-size: 2.7dvh;
+    background-color: white;
 }
 
 
@@ -82,7 +87,7 @@
     top:8vw;
     margin-left: 23%; */
     /* text formatting below */
-    font-size: 2.3vw;
+    font-size: 2vw;
     text-align: center;
 }
 
@@ -96,7 +101,7 @@
     margin-left: 2%;
     margin-top:22%;
     /* text formatting */
-    font-size: 2.3vw;
+    font-size: 2vw;
 }
 
 #picture-frame{
@@ -131,7 +136,6 @@
 }
 
 .project_container{
-    background-color: antiquewhite;
     width:70vw;
     height: 24vh;
     background-repeat: no-repeat;
@@ -141,13 +145,19 @@
 }
 
 .project_content{
+    padding: 2vh;
     color:white;
+    background-color: rgba(0, 0, 0, 0.45) ;
+}
+
+#projects_subtitle{
+    font-size: 4vh;
 }
 
 .project_title{
-    background-color: rgba(0, 0, 0, 0.3) ;
+    background-color: rgba(0, 0, 0, 0.45) ;
     color: white;
-    /* padding: 100; */
+    padding: 2vh;
 }
 
 #achievement_unlocked{
@@ -162,6 +172,10 @@
     background-image: url(theme-park-ride.jpg);
 }
 
+.gitlink{
+    color:white;
+}
+
 /* CONTACT */
 #contact_section{
     display: flex;
@@ -171,4 +185,9 @@
     gap:3vh;
     margin: 30px;
     margin-bottom: 20%;
+}
+
+.contact_text{
+    font-size: 2vw;
+    margin:1vh;
 }
